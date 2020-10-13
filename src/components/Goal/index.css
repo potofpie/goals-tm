@@ -1,0 +1,41 @@
+.Goal-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Goal-textbox-container {
+  display: flex; 
+  flex-direction: 'row'; 
+}
+
+.Goal-textbox {
+  display: flex;
+  flex: 1;
+  border: 0px;
+  border-left: 1px solid #3f51b5;
+  background-color: #f8f8ff;
+  padding: 5px;
+  transition: border-left 0.3s;
+}
+
+
+.Goal-textbox:focus {
+  border: 0px;
+  outline: none;
+  border-left: 5px solid #3f51b5;
+
+}
+
+.checkmark{
+  opacity : 0;
+  animation-delay: 3s;
+  animation: checkmark 1s 1;
+}
+
+@keyframes checkmark{
+  from {opacity :1;}
+  to {opacity :0;}
+}

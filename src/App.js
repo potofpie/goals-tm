@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+import GoalHeader from './components/GoalHeader'; 
+import {useGoalsValue} from './context'
+import UIGoals from './components/Goals';
+import DrawerAndBar from './components/DrawerAndBar';
+import Header from './components/Header';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import './App.css';
 
 function App() {
+  const {Goals} = useGoalsValue();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+      <DrawerAndBar>
+        {Goals === 'init' ? <div className="loading-container"><CircularProgress size={60}/></div> :
+          <>
+          <GoalHeader type="monthly" text='Monthly Goal'/>
+          <UIGoals goals={Goals.filter((g)=> g['type'] === 'monthly')} />
+          <GoalHeader type="weekly" text='Weekly Goal'/>
+          <UIGoals goals={Goals.filter((g)=> g['type'] === 'weekly')} />
+          <GoalHeader type="daily" text='Daily Goal'/>
+          <UIGoals goals={Goals.filter((g)=> g['type'] === 'daily')} />
+          </>
+        }
+      </DrawerAndBar>
+      </div>
   );
 }
 

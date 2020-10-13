@@ -1,0 +1,15 @@
+.ticker-visual-contianer {
+  display: flex;
+  height: 25px;
+  width: 100%;
+  flex-direction: row;
+  border: none;
+  background-color: #f8f8ff;
+}
+.ticker-visual {
+  height: 100%;
+  border: none;
+  background-color: #f8f8ff;
+  font-family: 'Roboto', sans-serif;
+}
+

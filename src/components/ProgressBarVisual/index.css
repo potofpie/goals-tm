@@ -1,0 +1,23 @@
+.progess-bar {
+  display: flex;
+  height: 25px;
+  width: 100%;
+  flex-direction: row;
+
+  border: 1px solid #3f51b5;
+}
+
+.inactive-progess-bar-line {
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+.active-progess-bar-line {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  /* width: 100%; */
+  background-color: #3f51b5;
+  /* border: 1px solid #3f51b5; */
+}

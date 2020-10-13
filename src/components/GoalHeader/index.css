@@ -1,0 +1,13 @@
+.GoalHeader-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.GoalHeader-addbutton-container {
+  padding: 5px;
+}
