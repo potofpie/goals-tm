@@ -1,0 +1,75 @@
+.App {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    }
+    
+.App {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+    
+.App::-webkit-scrollbar {
+    display: none;
+}
+
+
+.loading-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Login-SignUp-textbox {
+    display: flex;
+    flex: 1;
+    border: 0px;
+    border-left: 1px solid #3f51b5;
+    background-color: #f8f8ff;
+    padding: 5px;
+    transition: border-left 0.3s;
+    margin-top: 5px;
+}
+
+.Login-SignUp-textbox:focus {
+    border: 0px;
+    outline: none;
+    border-left: 5px solid #3f51b5;
+}
+
+
+.Login-SignUp-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Login-SignUp-button {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    transition: border 0.3s;
+    border: 2px solid #3f51b5;
+    /* background-color: #3f51b5; */
+    margin-top: 5px;
+    padding: 5px;
+    transition: background-color .3s;
+    transition: color .3s;
+    border-radius: 3px;
+}
+
+.Login-SignUp-button:focus {
+    outline: none;
+}
+
+.Login-SignUp-button:active {
+    outline: none;
+    color: white;
+    background-color:  #3f51b5;
+}

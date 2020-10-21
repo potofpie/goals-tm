@@ -15,7 +15,13 @@ var firebaseConfig = {
     measurementId: "G-F6SR2NGBQ7"
 };
 
-const litty = firebase.initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
 
+const firestore  = app.firestore();
+const auth = firebase.auth;
 
-export {litty as firebase};
+export {
+    firestore,
+    auth,
+ };
+ 

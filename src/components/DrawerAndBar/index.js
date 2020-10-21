@@ -23,8 +23,10 @@ import ChevronLeft from '@material-ui/icons/ChevronLeft';
 import ChevronRight from '@material-ui/icons/ChevronRight';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import Calendar from 'react-calendar';
+// import Calendar from 'react-calendar';
 import white from '@material-ui/core/colors/grey';
+import MonthSwitcher from '../MonthSwitcher';
+import AccountButtons from '../AccountButtons';
 import './index.css';
 
 const drawerWidth = 240;
@@ -97,6 +99,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+
 export default function PersistentDrawerLeft(props) {
   const classes = useStyles();
   const theme = useTheme();
@@ -110,6 +114,20 @@ export default function PersistentDrawerLeft(props) {
     setOpen(false);
   };
 
+  function MenuDrawerIcon() {
+    return (
+      <IconButton
+      color="inherit"
+      aria-label="open drawer"
+      onClick={handleDrawerOpen}
+      edge="start"
+      className={clsx(classes.menuButton, open && classes.hide)}
+    >
+      <MenuIcon />
+    </IconButton>
+    )
+  }
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -121,37 +139,16 @@ export default function PersistentDrawerLeft(props) {
       >
         <Toolbar>
         <div className='left-container' >
-
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}
-          >
-          <MenuIcon />
-          </IconButton>
+          {props.profilePage ?  <MenuDrawerIcon/> : null }
           <Typography variant="h6" noWrap>
             Goals TM
           </Typography>
         </div>
           <div className='month-container' >
-            <ThemeProvider theme={innerTheme}>
-              <IconButton >
-                <ChevronLeft color="secondary"/>
-              </IconButton>
-              <MenuItem>
-                October 2020
-              </MenuItem>
-              <IconButton >
-                <ChevronRight color="secondary"/>
-              </IconButton>
-            </ThemeProvider>
+            {props.profilePage ? <MonthSwitcher/> : null}
           </div>
           <div className='right-container' >
-            <IconButton >
-                <AccountCircle color="secondary"/>
-            </IconButton>
+            {props.profilePage ? <AccountButtons/> : null}
           </div>
         </Toolbar>
       </AppBar>

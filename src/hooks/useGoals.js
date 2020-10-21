@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react';
-import { firebase } from '../firebase';
+import { firestore } from '../firebase';
 
 export const useGoals = () => {
   const [Goals, setGoals] = useState('init');
 
   useEffect(() => {
-    let unsubsribe = firebase
-      .firestore()
-      .collection("Goals");
+    let unsubsribe = 
+      firestore.collection("Goals");
 
     unsubsribe = unsubsribe.onSnapshot( snapshot => {
       const newGoals = snapshot.docs.map( Goals => (
