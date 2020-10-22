@@ -8,5 +8,6 @@
 
 
 ### Technology
-> ![alt text](https://img.icons8.com/color/2x/firebase.png "Logo Title Text 1") ![alt text](https://img.icons8.com/office/2x/react.png "Logo Title Text 1") ![alt text](https://img.icons8.com/color/2x/javascript.png "Logo Title Text 1") ![alt text](https://vladmrnv.gallerycdn.vsassets.io/extensions/vladmrnv/expresssnippet/0.2.4/1528939685286/Microsoft.VisualStudio.Services.Icons.Default "Logo Title Text 1")
+> ![alt text](https://img.icons8.com/color/2x/firebase.png "Logo Title Text 1") ![alt text](https://img.icons8.com/office/2x/react.png "Logo Title Text 1") ![alt text](https://img.icons8.com/color/2x/javascript.png "Logo Title Text 1") 
+> ![alt text](https://lh3.googleusercontent.com/proxy/H72boYF97ifIkazPdqHf9mJdV123mcYY6vshsvs7CA7jva2G-j94zSUCqzYjIs2M2NAxyMiO7WqkpaPyk8ZYW9o-ezqzrO8ShvLNAJ_MPr-Toq2w8MsJ8L0s "Logo Title Text 1")
 
