@@ -1,10 +1,7 @@
 # Goals TM
 
 ### Purpose
-> This was inspired by my sister after I had a conversation with her about goal acquisition. While talking to her she showed 
-> how she tracks her progress toward her monthly goals. I found the way she visualized her goals very interesting and wanted 
-> to make this into a web application. This should also serve as a template of some of my experience as a full stack  
-> developer and automation engineer.
+> This was inspired by my sister after I had a conversation with her about goal acquisition. While talking to her she showed how she tracks her progress toward her monthly goals. I found the way she visualized her goals very interesting and wanted to make this into a web application. This should also serve as a template of some of my experience as a full stack developer and automation engineer.
 
 
 ### Technology
