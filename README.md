@@ -5,4 +5,4 @@
 
 
 ### Technology
-![Javascript](doc/readme_images/javascript.png) ![React](doc/readme_images/react.png) ![Express.js](doc/readme_images/express.png) ![Firebase](doc/readme_images/firebase.png) ![Ansible](doc/readme_images/ansible.png) 
+> ![Javascript](doc/readme_images/javascript.png) ![React](doc/readme_images/react.png) ![Express.js](doc/readme_images/express.png) ![Firebase](doc/readme_images/firebase.png) ![Ansible](doc/readme_images/ansible.png) 
