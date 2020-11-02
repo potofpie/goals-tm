@@ -1,3 +1,3 @@
-var { db } = require('./firebase');
+const { db } = require('./firebase');
 
 module.exports = { db }

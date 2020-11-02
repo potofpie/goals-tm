@@ -1,11 +1,7 @@
-var firebase = require('firebase');
-var express = require('express');
-var router = express.Router();
+const firebase  = require('./firebaseAccess');
+const birdrouter = require('./developerAPI');
 
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.send('Goals TM API');
-});
-
-module.exports = router;
+exports.modules =  {
+  // firebase,
+  birdrouter
+}

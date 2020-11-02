@@ -2,7 +2,7 @@
 import React,{ useState }  from 'react';
 import './index.css';
 import InputNumber from 'rc-input-number';
-import { changeProgress } from '../../actions/changeProgress';
+import { changeProgress } from '../../actions';
 
 
 function TickerVisual(props) {

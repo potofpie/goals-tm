@@ -10,8 +10,8 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 
 
 import IconButton from '@material-ui/core/IconButton';
-import { deleteGoal } from '../../actions/deleteGoal';
-import { changeText } from '../../actions/changeText';
+import { deleteGoal } from '../../actions';
+import { changeText } from '../../actions';
 import './index.css';
 
 function CaseSwitchVisual(goal){

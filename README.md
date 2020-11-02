@@ -6,3 +6,8 @@
 
 ### Technology
 > ![Javascript](doc/readme_images/javascript.png) ![React](doc/readme_images/react.png) ![Express.js](doc/readme_images/express.png) ![Firebase](doc/readme_images/firebase.png) ![Ansible](doc/readme_images/ansible.png) ![Postman](doc/readme_images/postman.png) 
+
+
+### Recources
+* https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+* https://github.com/dev-mastery/comments-api

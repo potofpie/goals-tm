@@ -2,7 +2,7 @@ import React from 'react';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import IconButton from '@material-ui/core/IconButton';
 import Divider from '@material-ui/core/Divider';
-import { addGoal } from '../../actions/addGoal';
+import { addGoal } from '../../actions'
 import './index.css';
 
 function GoalHeader(props) {

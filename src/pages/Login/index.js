@@ -7,7 +7,7 @@ import Header from '../../components/Header';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import './index.css';
 
-function Profile() {
+function Login() {
   const {Goals} = useGoalsValue();
   return (
       <div className="App">
@@ -31,4 +31,4 @@ function Profile() {
   );
 }
 
-export default Profile;
+export default Login;

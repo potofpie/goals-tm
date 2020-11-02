@@ -1,6 +1,6 @@
 import React,{ useState }  from 'react';
 import './index.css';
-import { changeProgress } from '../../actions/changeProgress';
+import { changeProgress } from '../../actions';
 
 
 function initProgessBarArray(length) {

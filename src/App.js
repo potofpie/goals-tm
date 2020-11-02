@@ -1,8 +1,12 @@
 import React from 'react';
-import Profile from './pages/Profile'
-import Signup from './pages/Signup'
-import Login from './pages/Login'
 import './App.css';
+
+import { 
+  Signup, 
+  Login, 
+  Profile 
+} from './pages';
+
 import {
   BrowserRouter as Router,
   Switch,
