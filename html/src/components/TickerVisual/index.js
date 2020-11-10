@@ -1,7 +1,5 @@
-// import React  from 'react';
 import React,{ useState }  from 'react';
 import './index.css';
-import InputNumber from 'rc-input-number';
 import { changeProgress } from '../../actions/changeProgress';
 
 

@@ -1,9 +1,7 @@
 import React,{useState}  from 'react';
-import TextField from '@material-ui/core/TextField';
 import MonthlyVisual from '../MonthlyVisual'
 import WeeklyVisual from '../WeeklyVisual';
 import DailyVisual from '../DailyVisual';
-import Fade from '@material-ui/core/Fade';
 import Delete from '@material-ui/icons/Delete';
 import CheckCircle from '@material-ui/icons/CheckCircle';
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -15,7 +13,6 @@ import { changeText } from '../../actions/changeText';
 import './index.css';
 
 function CaseSwitchVisual(goal){
-  // console.log(goal.id)
   switch(goal.type) {
     case 'monthly':
       return <MonthlyVisual goal={goal}/>
@@ -30,8 +27,9 @@ function CaseSwitchVisual(goal){
 
 function Goal(props) {
   const [ saving, setSaving ] = useState(false)
-  const [ showSaveComlete, setShowSaveComlete ] = useState(false)
+  const [ showSaveComplete, setShowSaveComplete ] = useState(false)
   const [ text, setText ] = useState(props.g.text)
+  console.log(showSaveComplete);
   return (
       <div className="Goal-container">
         <div className="Goal-textbox-container">
@@ -41,7 +39,7 @@ function Goal(props) {
             value={text}
             className="Goal-textbox"
             onChange={(e)=>{setText(e.target.value)}}
-            onBlur={() => { text !== props.g.text ? changeText(setShowSaveComlete,setSaving,text,props.g.id)   : console.log()}}
+            onBlur={() => { text !== props.g.text ? changeText(setShowSaveComplete,setSaving,text,props.g.id)   : console.log()}}
           />
           {saving ? 
               <CircularProgress size={20}/> 
@@ -50,6 +48,7 @@ function Goal(props) {
           }
         </div>
         {CaseSwitchVisual(props.g)}
+        {console.log(props.g.id)}
         <IconButton onClick={() => { deleteGoal(props.g.id) } }>
             <Delete color='primary' />
         </IconButton>

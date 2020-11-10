@@ -13,32 +13,15 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import ChevronLeft from '@material-ui/icons/ChevronLeft';
-import ChevronRight from '@material-ui/icons/ChevronRight';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-// import Calendar from 'react-calendar';
-import white from '@material-ui/core/colors/grey';
 import MonthSwitcher from '../MonthSwitcher';
 import AccountButtons from '../AccountButtons';
 import './index.css';
 
 const drawerWidth = 240;
-
-
-const innerTheme = createMuiTheme({
-  palette: {
-    secondary: {
-      main: white[50],
-    },
-  },
-});
 
 const useStyles = makeStyles((theme) => ({
   root: {

@@ -4,7 +4,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 import ChevronLeft from '@material-ui/icons/ChevronLeft';
 import ChevronRight from '@material-ui/icons/ChevronRight';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import Calendar from 'react-calendar';
 import white from '@material-ui/core/colors/grey';
 import './index.css';
 

@@ -3,15 +3,13 @@ import GoalHeader from '../../components/GoalHeader';
 import {useGoalsValue} from './../../context'
 import UIGoals from '../../components/Goals';
 import DrawerAndBar from '../../components/DrawerAndBar';
-import Header from '../../components/Header';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import './index.css';
 
 function Profile() {
   const {Goals} = useGoalsValue();
   return (
-      <div className="App">
-      <DrawerAndBar profilePage={true}>
+      <div>
         {Goals === 'init' ? <div className="loading-container"><CircularProgress size={60}/></div> :
           <>
           <GoalHeader type="monthly" text='Monthly Goal'/>
@@ -22,7 +20,6 @@ function Profile() {
           <UIGoals goals={Goals.filter((g)=> g['type'] === 'daily')} />
           </>
         }
-      </DrawerAndBar>
       </div>
   );
 }
